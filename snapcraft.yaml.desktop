@@ -1,0 +1,23 @@
+---
+name: kbruch
+version: 18.12.1
+confinement: strict
+grade: stable
+base: core18
+summary: Universal document viewer
+description: |-
+    Okular is a universal document viewer developed by KDE. Okular works on multiple platforms, including but not limited to Linux, Windows, Mac OS X, \*BSD, etc.
+
+    Features:
+
+    - Supported Formats: PDF, PS, Tiff, CHM, DjVu, Images, DVI, XPS, ODT, Fiction Book, Comic Book, Plucker, EPub, Fax
+    - Sidebar with contents, thumbnails, reviews and bookmarks
+    - Annotations support
+apps:
+    kbruch:
+        command: kbruch
+        desktop: "usr/share/applications/org.kde.kbruch.desktop"
+parts:
+    kbruch:
+        plugin: dump
+        source: src

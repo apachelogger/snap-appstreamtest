@@ -1,0 +1,16 @@
+---
+name: kbruch
+version: 18.12.1
+confinement: strict
+grade: stable
+base: core18
+adopt-info: kbruch # part to adopt from (first in parse list)
+apps:
+    kbruch:
+        command: kbruch
+        common-id: org.kde.kbruch.desktop
+parts:
+    kbruch:
+        plugin: dump
+        source: src
+        parse-info: [usr/share/metainfo/org.kde.kbruch.appdata.xml]
